@@ -56,31 +56,41 @@ a{
     text-decoration: none;
 }
 
-.alert {
-    display: none;
+.popup{
+    display : none;
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4CAF50;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.popup .popupbox{
+    background: seagreen;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
-    border-radius: 5px;
-    z-index: 9999;
-  }
-  
-  .alert-toggle {
-    display: none;
-  }
-  
-  
-  #alertToggle:checked ~ .alert {
-    display: block;
-  }
-  
-  .message {
+    max-width: 80%;
+}
+
+.goback{
+    background-color: #2345c0;
+    border-radius: 6px;
+    border : none;
+    outline: none;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     font-size: 18px;
-  }
-  
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
   
